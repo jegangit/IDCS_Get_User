@@ -1,0 +1,14 @@
+curl "https://${oauthService}:${oauthServicePort}/admin/v1/${searchArea}/.search" -X POST -H "Content-type: application/scim+json" -H "Accept: application/scim+json,application/json" -H "Authorization: Bearer $token" --data @${tempFile}
+
+where
+
+file =
+
+{
+  "schemas": ["urn:ietf:params:scim:api:messages:2.0:SearchRequest"],
+  "attributes": ["displayName", "userName"],
+  "filter":
+          "userName sw \"john.egan\"",
+  "startIndex": 1,
+  "count": 10
+}'
