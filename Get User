@@ -12,3 +12,17 @@ file =
   "startIndex": 1,
   "count": 10
 }'
+
+search parameters:
+
+#https://docs.oracle.com/en/cloud/paas/identity-cloud/idcsa/OCISQueryParameters.html
+  #eq - equals
+  #ne - not equal
+  #co - contains
+  #sw - starts with
+  #ew - ends with
+  #gt - greater than
+  #ge - greater than or equal
+  #lt - less than
+  #le - less than or equal
+Those are the different search operators. the more specific the better for most things.
